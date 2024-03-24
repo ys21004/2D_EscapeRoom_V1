@@ -294,7 +294,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 1160, y: -460}
-  m_SizeDelta: {x: 290, y: 50}
+  m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &211669179
 MonoBehaviour:
@@ -416,7 +416,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -448.30423}
-  m_SizeDelta: {x: 576.4709, y: 99.3915}
+  m_SizeDelta: {x: 400, y: 99.3915}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &373845573
 MonoBehaviour:
@@ -629,7 +629,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 1160, y: -528}
-  m_SizeDelta: {x: 290, y: 50}
+  m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &430272574
 MonoBehaviour:
@@ -951,6 +951,7 @@ GameObject:
   - component: {fileID: 908389590}
   - component: {fileID: 908389589}
   - component: {fileID: 908389588}
+  - component: {fileID: 908389591}
   m_Layer: 5
   m_Name: Register
   m_TagString: Untagged
@@ -976,7 +977,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -1045, y: -510}
-  m_SizeDelta: {x: 300.9102, y: 56.4207}
+  m_SizeDelta: {x: 400, y: 56.4207}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &908389588
 MonoBehaviour:
@@ -1021,7 +1022,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 908389589}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 908389591}
+        m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
+        m_MethodName: SwitchScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: register
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &908389589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1060,6 +1073,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908389586}
   m_CullTransparentMesh: 1
+--- !u!114 &908389591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908389586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe6971498c45d4b15a6cdfd4b0c26a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &908414346
 GameObject:
   m_ObjectHideFlags: 0
@@ -1208,8 +1233,9 @@ GameObject:
   - component: {fileID: 1299668996}
   - component: {fileID: 1299668995}
   - component: {fileID: 1299668994}
+  - component: {fileID: 1299668997}
   m_Layer: 5
-  m_Name: SignIn
+  m_Name: Login
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1233,7 +1259,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -1045, y: -421.25}
-  m_SizeDelta: {x: 300.9102, y: 56.4207}
+  m_SizeDelta: {x: 400, y: 56.4207}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1299668994
 MonoBehaviour:
@@ -1278,7 +1304,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1299668995}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1299668997}
+        m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
+        m_MethodName: SwitchScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: login
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1299668995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1317,6 +1355,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1299668992}
   m_CullTransparentMesh: 1
+--- !u!114 &1299668997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299668992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe6971498c45d4b15a6cdfd4b0c26a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1346127232
 GameObject:
   m_ObjectHideFlags: 0
@@ -1642,7 +1692,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sign In
+  m_text: 'Login
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
