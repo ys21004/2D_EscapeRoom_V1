@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "945682166037",
+    "project_id": "escaperoom-f36b3",
+    "storage_bucket": "escaperoom-f36b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945682166037:android:13b007abcdf24fa90ab91c",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.Project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf1MrsqtQic_cWHiNYxLlc6nmqeI7KuVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
