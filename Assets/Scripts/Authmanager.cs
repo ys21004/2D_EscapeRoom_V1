@@ -80,7 +80,7 @@ public class Authmanager : MonoBehaviour
         if (LoginTask.Exception != null)
         {
             //If there are errors handle them
-            Debug.LogWarning(message: $"Failed to register task with {LoginTask.Exception}");
+            //Debug.LogWarning(message: $"Failed to register task with {LoginTask.Exception}");
             FirebaseException firebaseEx = LoginTask.Exception.GetBaseException() as FirebaseException;
             AuthError errorCode = (AuthError)firebaseEx.ErrorCode;
 
