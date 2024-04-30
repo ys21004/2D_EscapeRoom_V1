@@ -15,15 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Homepage/register.unity
     guid: 31c71b82d6ed34a6bbedf91ba82c6418
   - enabled: 1
-    path: Assets/Scenes/Side1_Room.unity
-    guid: 4012e78c25bc8468aa1e8d69cb9f93d0
-  - enabled: 1
-    path: Assets/Scenes/Side2_Room.unity
-    guid: 41cc1cbf4675744929e1b3ffd40a71ee
-  - enabled: 1
-    path: Assets/Scenes/Side3_Room.unity
-    guid: d8b23da657aac4d8da8ec7187100f547
-  - enabled: 1
     path: Assets/Scenes/Homepage/how_to_play.unity
     guid: 20736bdbc71834673a3acde52c743b68
   - enabled: 1
